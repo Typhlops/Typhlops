@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I'm sorry, my primary ability is to offer career advice. I have limited functionality otherwise. Try something else, or type "hello" to begin.</template>
+  </category>
+</aiml>

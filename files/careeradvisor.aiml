@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    
+<category>
+    <pattern>hello</pattern>
+    <template>
+        Hello, I&apos;m a chatbot here to help you explore future career choices in computer science and software development! Enter your name in the form "My name is [name]" and let&apos;s get started.
+    </template>
+</category>
+
+<category>
+    <pattern>hello *</pattern>
+    <template>
+        Hello, I&apos;m a chatbot here to help you explore future career choices in computer science and software development! Enter your name in the form "My name is [name]" and let&apos;s get started.
+    </template>
+</category>
+
+<category>
+    <pattern>My name is *</pattern>
+    <template>
+        <think>
+            <set name = "student_name"><star/></set>
+        </think>
+        Nice to meet you, <get name = "student_name"></get>. Are you here for career advice today?
+    <reply>
+        Yes, please assist me
+    </reply>
+    <reply>
+        No, I&apos;m looking for something else
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>Yes, please assist me</pattern>
+    <template>
+        I&apos;ll ask you a few basic questions about your studies and interests. Are you currently studying computer science or a related field?
+    <button>
+        I&apos;m studying in a computer science field
+    </button>
+    <button>
+        I&apos;m in another degree program
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>_ studying in a computer science field</pattern>
+    <template>
+        Do you prefer programming or high-level design?
+    <reply>
+        Programming
+    </reply>
+    <reply>
+        Designing
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>Designing</pattern>
+    <template>
+        Do you prefer working on websites and user experience or the architecture of systems and processes?
+    <button>
+        Websites and user experience
+    </button>
+    <button>
+        System and process architecture
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Websites and user experience</pattern>
+    <template>
+        You may be interested in careers in frontend development and UX/UI design. Frontend development creates the user-facing elements of an application, such as the webpage itself. These developers frequently work with HTML, CSS, JavaScript, and frameworks such as Angular.
+        They work to make the user experience as clear, convenient, and efficient as possible.
+        UX/UI design is tasked with creating intuitive user interfaces and experiences. This involves a number of considerations such as the layout, icons, colors, and how elements interact, as well as making modifications to meet users' needs and expectations.
+    </template>
+</category>
+
+<category>
+    <pattern>System and process architecture</pattern>
+    <template>
+        You may be interested in a career in development and operations, frequently referred to by DevOps. DevOps engineers engage in streamlining internal processes and communications that deploy and deliver finished software as efficiently as possible. 
+        This includes overseeing digital infrastructure, automating repetitive tasks, continuous improvement, and other responsibilities critical to high-level operations within the organization's development and IT departments.
+    </template>
+</category>
+
+<category>
+    <pattern>Programming</pattern>
+    <template>
+        Which of these sounds the most appealing to you?
+    <button>
+        Artificial intelligence and processing large volumes of data
+    </button>
+    <button>
+        Building and optimizing the underlying logic and processes of a system
+    </button>
+    <button>
+        Creating video games
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Artificial intelligence and processing large volumes of data</pattern>
+    <template>
+        You may be interested in a career in artificial intelligence, machine learning, or data science. AI is a rapidly growing field with many overlapping closely related disciplines such as data science, data engineering, and machine learning. 
+        Data science works with large data sets to build models for predictions and insights into an organization's processes and how they can be improved. 
+        Data engineering is closely related to data science and creates pipelines that deliver accurate, clean data to data scientists for further processing. 
+        Machine learning algorithms are used by many professionals in AI, data science, and related fields to build predictive models from a data set that isn't as easily analyzed by a human, unconvering correlations that might otherwise have gone unnoticed.
+        AI curently includes many subdisciplines, such as image recognition, robotics, natural language processing, and swarm intelligence.
+        It varies substantially by role and organization, but is primarily concerned with the development of automated processes and algorithms for machine intelligence to eventually surpass human capabilities.
+    </template>
+</category>
+
+<category>
+    <pattern>Building and optimizing the underlying logic and processes of a system</pattern>
+    <template>
+        You may be interested in careers in embedded systems and backend programming. Embedded systems are machines requiring computer-related functioning, which includes everyday consumer electronics as well as specialized hardware, such as medical devices and industrial machinery.
+        Embedded systems have specialized requirements and constraints that can be challenging to work with and can create a very different environment that many other forms of software engineering intended for desktop computers and mobile devices.
+        As the projects are generally rather specialized to a single device or limited family, creative yet difficult solutions can be utilized to optimize the machine's functioning, in contrast to most software engineering that must work on a wide array of devices and hardware.
+        Backend programming works with databases, internal system architecture, security, and server-side application functioning.
+        This includes all of the data flows and transactions that are invisible to the user, such as an order on a website being relayed to a database, payment processor, and other systems for processing before being shipped.
+    </template>
+</category>
+
+<category>
+    <pattern>Creating video games</pattern>
+    <template>
+        You may be interested in a career in game development. Game developers, as the name suggests, create video games, frequently using languages such as C++ and C#.
+        Game development encompasses a number of roles and responsibilities, including the actual programming, artists, game designers, level designers, writers, audio engineers, and many others.
+    </template>
+</category>
+
+<category>
+    <pattern>bye</pattern>
+    <template>I hope I've provided you with useful advice. Have a great day!</template>
+</category>
+
+<category>
+    <pattern>thank you</pattern>
+    <template>I hope I've provided you with useful advice. Have a great day!</template>
+</category>
+
+<category>
+    <pattern>thanks</pattern>
+    <template>I hope I've provided you with useful advice. Have a great day!</template>
+</category>
+
+
+
+
+
+
+
+
+
+</aiml>
